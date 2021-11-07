@@ -1,0 +1,22 @@
+.profile__editcard {
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    box-sizing: border-box;
+    border: 1px solid white;
+    align-self: center;
+    background-image: url(../../../images/edit.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity .4s, transform .3s linear;
+}
+.profile__editcard:hover {
+  opacity: .4;
+}
+
+@media screen and (max-width: 458px) {
+  .profile__editcard{
+    width: 18px;
+    height: 18px;
+  }
+}
