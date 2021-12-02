@@ -18,6 +18,8 @@ function closePopupContainer(popup) {
 }
 
 document.querySelector('.profile__editcard').addEventListener('click', () => {
+    nameInput.value = profileName.textContent;
+    descriptionInput.value = profileInfo.textContent;
     openPopupContainer(profilePopup);
 });
 
