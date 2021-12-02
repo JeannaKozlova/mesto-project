@@ -1,21 +1,26 @@
 .profile {
-    margin: 40px auto 51px auto;
-    max-width: 882px;
-    display: flex;
+    display: grid;
+    margin: 40px auto 52px auto;
+    grid-template-columns: 120px 1fr 150px;
+    column-gap: 30px;
+    grid-template-areas: "avatar container add";
 }
 
-@media screen and (min-width: 768px) and (max-width: 934px) {
+@media screen and (max-width: 767px) {
     .profile {
-        width: 80%;
+        margin-top: 20px;
+        grid-template-columns: 120px 1fr 100px;
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 550px) {
     .profile {
-        margin: 36px auto 51px;
-        width: 70%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin: 40px auto 51px auto;
+        min-width: 282px;
+        width: 88.2%;
+        grid-template-areas: "avatar" "container" "add";
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 1fr 78px;
+        row-gap: 6px;
     }
 }
