@@ -1,22 +1,23 @@
-.profile__editcard {
+.profile__editcard{
+    background: black url("../../../images/edit.svg") no-repeat center;
+    border: 1px solid white;
+    margin-bottom: 8px;
     width: 24px;
     height: 24px;
-    background-color: black;
-    box-sizing: border-box;
-    border: 1px solid white;
-    align-self: center;
-    background-image: url(../../../images/edit.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: opacity .4s, transform .3s linear;
-}
-.profile__editcard:hover {
-  opacity: .4;
+    align-self: flex-end;
+    cursor: pointer;
+    grid-area: edit;
 }
 
-@media screen and (max-width: 458px) {
-  .profile__editcard{
-    width: 18px;
-    height: 18px;
-  }
+.profile__editcard:hover {
+    opacity: .7;
+    transition: .3s;
+}
+
+@media screen and (max-width:550px) {
+    .profile__editcard {
+        width: 18px;
+        height: 18px;
+        margin-bottom: 8px;
+    }
 }
